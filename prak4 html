@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kehadiran Praktikan</title>
+</head>
+<body>
+
+<form action="submit.php" method="post">
+    <fieldset>
+        <legend>Form Kehadiran Praktikan</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama"><br>
+
+        <label for="npm">NPM:</label>
+        <input type="npm" id="npm" name="npm" placeholder="Masukkan NPM"><br>
+
+        <label for="kelasInput">Kelas</label>
+        <input type="text" id="kelasInput" list="kelas" name="kelas" placeholder="Pilih kelas">
+
+        <datalist id="kelas">
+            <option value="A">
+            <option value="B">
+            <option value="SI">
+            <option value="MI">
+        </datalist><br>
+
+        <label for="date">Tanggal</label>
+        <input type="date" id="date"><br>
+
+        <label for="time">Waktu</label>
+        <input type="time" id="time"><br>
+
+        <input type="submit" value="submit">
+    </fieldset>
+</form>
+
+</body>
+</html>
